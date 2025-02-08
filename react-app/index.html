@@ -8,11 +8,11 @@
   <style>
     .casetaDeschidere {
       height: 300px;
-      background-image: linear-gradient(rgb(72, 72, 255),rgb(0, 101, 126));
+      background-image: url("../imagini/felipe-santana-xJkTCbtuqAY-unsplash.jpg");
       align-items: center;
     }
     .casetaDeschidere h1 {
-      text-shadow: 3px 2px 5px;
+      text-shadow: 3px 2px 5px black;
       color: white;
     }
     .spatiator {
@@ -40,29 +40,24 @@
       justify-content: right;
     }
 
-    .parinte {
-      height: 200px;
-      background-color: rgb(255, 202, 123);
-      /* display: flex; */
-      /* justify-content: center;
-      align-items: center; */
+    .card {
+      height: 350px;
     }
-    .copil {
-      width: 300px;
-      padding: 20px;
-      background-color: aqua;
-      /* justify-content: center; */
+
+    .imagine{
+      /* height: auto; */
+      background-image: url("../imagini/ajustat\ nevoilor.jpg");
+      border-radius: 1rem;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
     }
+
   </style>
   </head>
 <body>
-
-  <div class="parinte">
-    <div class="copil">eu sunt copilul</div>
-  </div>
-
-    <div class="container-fluid text-center">
-      <div class="row bg-primary-subtle centrare" style="justify-content: center; align-items: center">
+    <div class="container-fluid text-center p-0">
+      <div class="row bg-primary-subtle centrare" >
         <ul class="nav">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Active</a>
@@ -78,15 +73,55 @@
           </li>
         </ul>
       </div>
-      <div class="row justify-content-md-center casetaDeschidere" >
+      <div class="row justify-content-md-center casetaDeschidere clg" >
         <h1>Welcome back!</h1>
       </div>
+      
       <div class="spatiator"></div>
-      <div class="row clg caseta2">
-        <div class="col-sm-6">salutare</div>
-        <div class="col-sm-6">buna</div>
+      <div class="container-fluid bg-secondary-subtle ">
+        <div class="row justify-content-center align-items-center csm"><div class="col-sm-8">
+          <h3>Incepand din 1998</h3>
+        <p>Just Natural a fost infiintata in 1998 in localitatea Roman din dorinta de a aduce mai aproape de omul de rand articole vestimentare naturale care sa se adapteze cu nevoilor complexe ale omului modern.</p>
+        </div>
       </div>
+        
+      </div>
+      <div class="spatiator"></div>
+      <div class="container ">
+        <div class="row justify-content-evenly align-items-center clg-sm">
+          <div class="col-sm-6 clg imagine" style='background-image: url("../imagini/masuratori.jpg");'>
+          </div>
+          <div class="col-sm-6" >
+            <h2>Precizie pentru cea mai buna calitate</h2>
+            <p>Use align-items utilities on flexbox containers to change the alignment of flex items on the cross axis (the y-axis to start, x-axis if flex-direction: column). Choose from start, end, center, baseline, or stretch (browser default).</p>
+            <button type="button" class="btn btn-outline-primary">Primary</button>
+          </div>
+        </div>
+      </div>
+      <div class="spatiator"></div>
+
+      <div class="spatiator"></div>
+      <div class="container">
+        <div class="row justify-content-evenly align-items-center clg-sm">
+          <div class="col-sm-6">
+            <h2>Ajustam nevoilor</h2>
+            <p>Use align-items utilities on flexbox containers to change the alignment of flex items on the cross axis (the y-axis to start, x-axis if flex-direction: column). Choose from start, end, center, baseline, or stretch (browser default).</p>
+            <button type="button" class="btn btn-outline-primary">Primary</button>
+          </div>
+          <div class="col-sm-6 clg imagine" >
+          </div>
+        </div>
+      </div>
+      <div class="spatiator"></div>
+      <div class="conteiner imagine" style='background-image: url("../imagini/cea\ mai\ buna\ experienta.jpg"); '>
+        <div class="row justify-content-center align-items-center cxl">
+          <h2 style="color: white; text-shadow: 1px 1px 2px black;" style="display: block;">Totul pentru cea mai buna experienta</h2>
+        </div>
+      </div>
+      <div class="spatiator"></div>
+
     </div>
+  
    
 
   

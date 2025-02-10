@@ -16,19 +16,19 @@
       color: white;
     }
     .spatiator {
-      height: 75px;
+      min-height: 75px;
     }
     .csm {
-      height: 200px;
+      min-height: 200px;
     }
     .cmd {
-      height: 300px;
+      min-height: 300px;
     }
     .clg {
-      height: 400px;
+      min-height: 400px;
     }
     .cxl {
-      height: 500px;
+      min-height: 500px;
     }
 
     .caseta2 {
@@ -46,27 +46,41 @@
 
     .imagine{
       /* height: auto; */
-      background-image: url("../imagini/ajustat\ nevoilor.jpg");
+      /* background-image: url("../imagini/ajustat\ nevoilor.jpg"); */
       border-radius: 1rem;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
     }
+    .catProduse {
+      color: white;
+      text-shadow: 3px 2px 5px black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    @media (min-width: 992px) { 
+  
+     }
 
   </style>
   </head>
 <body>
+ 
+
+  
     <div class="container-fluid text-center p-0">
       <div class="row bg-primary-subtle centrare" >
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Active</a>
+            <a class="nav-link active" aria-current="page" href="#">Despre noi</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">Acasa</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">Produse</a>
           </li>
           <li class="nav-item">
             <a class="nav-link disabled" aria-disabled="true">Disabled</a>
@@ -76,51 +90,143 @@
       <div class="row justify-content-md-center casetaDeschidere clg" >
         <h1>Welcome back!</h1>
       </div>
-      
-      <div class="spatiator"></div>
-      <div class="container-fluid bg-secondary-subtle ">
-        <div class="row justify-content-center align-items-center csm"><div class="col-sm-8">
+    </div>
+
+    <div class="spatiator"></div>
+    <div class="container-fluid bg-secondary-subtle ">
+      <div class="row justify-content-center align-items-center csm">
+        <div class="col-sm-8">
           <h3>Incepand din 1998</h3>
         <p>Just Natural a fost infiintata in 1998 in localitatea Roman din dorinta de a aduce mai aproape de omul de rand articole vestimentare naturale care sa se adapteze cu nevoilor complexe ale omului modern.</p>
         </div>
       </div>
-        
-      </div>
-      <div class="spatiator"></div>
-      <div class="container ">
-        <div class="row justify-content-evenly align-items-center clg-sm">
-          <div class="col-sm-6 clg imagine" style='background-image: url("../imagini/masuratori.jpg");'>
-          </div>
-          <div class="col-sm-6" >
-            <h2>Precizie pentru cea mai buna calitate</h2>
-            <p>Use align-items utilities on flexbox containers to change the alignment of flex items on the cross axis (the y-axis to start, x-axis if flex-direction: column). Choose from start, end, center, baseline, or stretch (browser default).</p>
-            <button type="button" class="btn btn-outline-primary">Primary</button>
-          </div>
-        </div>
-      </div>
-      <div class="spatiator"></div>
-
-      <div class="spatiator"></div>
-      <div class="container">
-        <div class="row justify-content-evenly align-items-center clg-sm">
-          <div class="col-sm-6">
-            <h2>Ajustam nevoilor</h2>
-            <p>Use align-items utilities on flexbox containers to change the alignment of flex items on the cross axis (the y-axis to start, x-axis if flex-direction: column). Choose from start, end, center, baseline, or stretch (browser default).</p>
-            <button type="button" class="btn btn-outline-primary">Primary</button>
-          </div>
-          <div class="col-sm-6 clg imagine" >
-          </div>
-        </div>
-      </div>
-      <div class="spatiator"></div>
-      <div class="conteiner imagine" style='background-image: url("../imagini/cea\ mai\ buna\ experienta.jpg"); '>
-        <div class="row justify-content-center align-items-center cxl">
-          <h2 style="color: white; text-shadow: 1px 1px 2px black;" style="display: block;">Totul pentru cea mai buna experienta</h2>
-        </div>
-      </div>
-      <div class="spatiator"></div>
-
     </div>
+        
+    <div class="spatiator"></div>
+    <div class="container ">
+      <div class="row justify-content-evenly align-items-center clg-sm">
+        <div class="col-sm-6 clg imagine" style='background-image: url("../imagini/masuratori.jpg");'>
+        </div>
+        <div class="col-sm-6" >
+          <h2>Precizie pentru cea mai buna calitate</h2>
+          <p>Use align-items utilities on flexbox containers to change the alignment of flex items on the cross axis (the y-axis to start, x-axis if flex-direction: column). Choose from start, end, center, baseline, or stretch (browser default).</p>
+        </div>
+      </div>
+    </div>
+    <div class="spatiator"></div>
+
+    <div class="spatiator"></div>
+    <div class="container">
+      <div class="row justify-content-evenly align-items-center clg-sm">
+        <div class="col-sm-6">
+          <h2>Ajustam nevoilor</h2>
+          <p>Use align-items utilities on flexbox containers to change the alignment of flex items on the cross axis (the y-axis to start, x-axis if flex-direction: column). Choose from start, end, center, baseline, or stretch (browser default).</p>
+        </div>
+        <div class="col-sm-6 clg imagine" >
+        </div>
+      </div>
+    </div>
+    <div class="spatiator"></div>
+    <div class="conteiner imagine" style='background-image: url("../imagini/cea\ mai\ buna\ experienta.jpg"); '>
+      <div class="row justify-content-center align-items-center cxl">
+        <h2 style="color: white; text-shadow: 1px 1px 2px black;" style="display: block;">Totul pentru cea mai buna experienta</h2>
+      </div>
+    </div>
+    <div class="spatiator"></div>
+    <div class="conta iner">
+      <p>aici punem un text mai lung ca trecere intre cum facem spre ce facem</p>
+    </div>
+    <div class="spatiator"></div>
+      <div class="container">
+        <div class="row justify-content-evenly gap-3">
+          <div class="col-sm-10 col-sm-3 col-lg-3 imagine clg catProduse" style= 'background-image: url("../imagini/curea.jpg");'>
+            <h2>Curele de piele</h2>
+            <a class="btn btn-primary" href="#" role="button">Curele</a>
+          </div>
+          <div class="col-sm-10 col-sm-3 col-lg-3 imagine clg catProduse" style='background-image: url("../imagini/geanta.jpg");'>
+            <h2>Genti de piele</h2>
+            <a class="btn btn-primary" href="#" role="button">Genti</a>
+          </div>
+          <div class="col-sm-10 col-sm-3 col-lg-3 imagine clg catProduse" style=' background-image: url("../imagini/pantofi.jpg");'>
+            <h2>Pantofi de piele</h2>
+            <a class="btn btn-primary" href="#" role="button">Pantofi</a>
+          </div>
+        </div>
+      </div>
+      <div class="spatiator"></div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+              <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+              <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+            </symbol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+    
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p>&copy; 2024 Company, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    
   
    
 

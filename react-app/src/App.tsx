@@ -1,100 +1,72 @@
-import Mesaj from "./mesaj";
-// import MyButton from "./button";
+import { useState } from "react"
+import MyButton2 from "./button2";
+import "./App.css"
 
-function BasicType() {
-let persons =[{nume: "andrei",varsta : 24},{nume: "Maria",varta: 32}];
-let nume = ["radu", "maria", "ion", "vasile", "george"];
 
-console.log(persons[0].nume);
-let persona3 = {
-  nume: "Florin",
-  varsta : 21
-}
+function App() {
+  const [boardState,useboardState] = useState(Array(9).fill(null))
+  const [xIsNext, setXIsNext] = useState(true);
+  const [winnerTitle,SetWinnerTitle] = useState("");
 
-function atribuire (listPersons: array, listNames: array) {
-  let nr = listNames.length;
-  let varstaNr = 23;
-  for (let i = 0; i<nr; i++)
-    listPersons.push({nume: listNames[i],varsta: varstaNr++});
-}
+  function ClickHandler(position:number) {
+    let tempBoard = boardState;
+    
 
-atribuire(persons,nume);
-console.log(persons[4])
-}
+    if (tempBoard[position] || winnerTitle != "")
+      return null;
 
-export default function App() {
-  BasicType();
+    if(xIsNext)
+      tempBoard[position] = "X";
+    else
+      tempBoard[position] = "O";
+
+    setXIsNext(!xIsNext);
+    useboardState(tempBoard);
+    winner();
+
+  }
+
+  function winner() {
+    let winPos = [
+      [0,1,2],
+      [3,4,5],
+      [6,7,8],
+      [0,3,6],
+      [1,4,7],
+      [2,5,8],
+      [0,4,8],
+      [2,4,6]
+    ];
+    for(let i=0; i<=7; i++)
+    {
+      if(boardState[winPos[i][0]] && boardState[winPos[i][1]] === boardState[winPos[i][2]] && boardState[winPos[i][0]] === boardState[winPos[i][1]] )
+      {
+        SetWinnerTitle("The winner is " + boardState[winPos[i][0]]);
+        return boardState[winPos[i][0]];
+      }
+    }
+  }
+
   return (
-    <>
-  <div>{}</div>
- 
-  </>
-  )
+    <> 
+      <div className="divLine">
+        <MyButton2 textAtr={boardState[0]} onButtonClick={() => ClickHandler(0)}></MyButton2>
+        <MyButton2 textAtr={boardState[1]} onButtonClick={() => ClickHandler(1)}></MyButton2>
+        <MyButton2 textAtr={boardState[2]} onButtonClick={() => ClickHandler(2)}></MyButton2>
+      </div>
+      <div className="divLine">
+        <MyButton2 textAtr={boardState[3]} onButtonClick={() => ClickHandler(3)}></MyButton2>
+        <MyButton2 textAtr={boardState[4]} onButtonClick={() => ClickHandler(4)}></MyButton2>
+        <MyButton2 textAtr={boardState[5]} onButtonClick={() => ClickHandler(5)}></MyButton2>
+      </div>
+      <div className="divLine">
+        <MyButton2 textAtr={boardState[6]} onButtonClick={() => ClickHandler(6)}></MyButton2>
+        <MyButton2 textAtr={boardState[7]} onButtonClick={() => ClickHandler(7)}></MyButton2>
+        <MyButton2 textAtr={boardState[8]} onButtonClick={() => ClickHandler(8)}></MyButton2>
+      </div>
+      <h2 className="center">{winnerTitle}</h2>
+    </>
+  );
 }
 
-
-// export default App;
-
-
-
-
-
-
-
-
-
-
-
-// function Afisare():void {
-//   console.log("salutare! Ai apelat functia afisare");
-// }
-
-// function MyButton({}) {
-//   return(
-//       <button onClick = {Afisare}>sunt un buton</button>
-//   );
-// }
-// function ImgElem() {
-//   return (
-//     // <div src = {}></div>
-//   )
-// }
-
-// function Prod(Nume:string, linkImg:string, cantitate: number, id:number) {
-//   this.numeProdus = Nume;
-//   this.linkImg = linkImg;
-//   this.cantitate = cantitate;
-//   this.id = id;
-// }
-
-// const produs = new Prod("ulei", " ", 98,1998);
-
-// class Person {
-//   name: "";
-// }
-
-// const person = new Person();
-// person.name = "Jane";
-
-// function MyEelement() {
-
-//   return (
-//     <>
-//       <ImgElem>
-//         <title></title>
-//         <MyButton/>
-//       </ImgElem>
-//     </>
-//   )
-// }
-
-// function App() {
-//   return (
-//     <>
-//   <MyEelement />
-//   </>
-//   )
-// }
-
-
-// export default App;
+export default App

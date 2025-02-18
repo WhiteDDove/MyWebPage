@@ -1,0 +1,23 @@
+.divFace {
+    background-color: brown;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 5px;
+}
+
+.mybutton {
+    display: inline;
+    float: left;
+    background-color: rgb(220, 220, 220);
+    height: 40px;
+    width: 40px;
+}
+.divLine {
+    width: 100%;
+    overflow: auto;
+}
+.center {
+    text-align: center;
+    color: rgb(98, 255, 0);
+}
